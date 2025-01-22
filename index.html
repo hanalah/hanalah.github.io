@@ -22,7 +22,92 @@
    </style>
 </head>
 <body>
-   <h1>Naslov polepša stran</h1>
-   <p>Tu lahko kaj napišete, ali pa tudi ne.</p>
+   <h1>Plonkec za RP</h1>
+
+   <h2>HTML</h2>
+   <p>
+         <ul>
+            <li>struktura dokumenta: <code>&lt;!--...--&gt;, &lt;body&gt;, &lt;div&gt;, &lt;h1&gt;, &lt;h2&gt;, ... &lt;h6&gt;</code>,</li>
+            <li>oblikovanje vsebine: <code>&lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;code&gt;, &lt;em&gt;, &lt;hr&gt;, &lt;img&gt;, &lt;kbd&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;small&gt;, &lt;span&gt;, &lt;strong&gt;,</code></li>
+            <li>glava dokumenta: <code>&lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, &lt;link&gt;, &lt;meta&gt;,</code></li>
+            <li>seznami: <code>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;,</code></li>
+            <li>tabele:<code> &lt;table&gt;, &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt;, &lt;th&gt;, &lt;thead&gt;, &lt;tr&gt;,</code></li>
+            <li>splošni atributi: id za identifikator, class za razred,</li>
+            <li>nalaganje CSS stila: <code>&lt;link rel="stylesheet" href="⟨pot-do-datoteke⟩"&gt;,</code></li>
+            <li>kodiranje dokumenta: <code>&lt;meta charset="UTF-8"&gt;,</code></li>
+            <li>povezave: &lt;a href="⟨naslov⟩"&gt;⟨besedilo povezave⟩&lt;/a&gt; in &lt;a href="#⟨id-elementa⟩"&gt;⟨besedilo povezave⟩&lt;/a&gt;</li>
+         </ul>
+
+         Uporabne povezave:
+         <a href="https://www.w3schools.com/tags/default.asp">HTML tag list</a>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements reference</a>   
+   </p>
+
+   <h2>CSS</h2>
+
+   <p>
+      <ul>
+         <li>dimenzije elementov: height, width,</li>
+         <li>škatlasti model: margin, border, padding, vključno z verzijami -top, -right, -bottom, -left,</li>
+         <li>robovi: border: ⟨debelina⟩ ⟨slog⟩ ⟨barva⟩ ali border-⟨top|right|bottom|left⟩: ⟨debelina⟩ ⟨slog⟩ ⟨barva⟩ (če sloga navodila ne poimenujejo eksplicitno, uporabite solid),</li>
+         <li>besedilo: text-align, font-size, font-weight, color,</li>
+         <li>oblivanje: float,</li>
+         <li>barva ozadja: background-color,</li>
+         <li>barve: po imenu (red), v heksadecimalnem zapisu (#FF0000) ali v zapisu RGB (rgb(225, 0, 0) oz. s prosojnostjo rgba(225, 0, 0, 0.4)),</li>
+         <li>dimenzije: v točkah (10px), enotah em (2em) ali odstotkih (42%)</li>
+      </ul>
+   </p>
+
+   <h2>LaTeX</h2>
+
+   <p>
+      V preambuli morate:
+    <ul>
+       <li>z \documentclass ustrezno določiti razred article ali beamer ter nastaviti velikost papirja in pisave (a4paper, 10pt, 14pt, …),</li>
+       <li>z \usepackage našteti ustrezne pakete,</li>
+       <li>s paketi babel, inputenc in fontenc nastaviti ustrezno kodiranje ter podporo za slovenščino,</li>
+       <li>vedeti, kdaj potrebujete pakete amsmath, amssymb, amsthm, hyperref, booktabs, graphicx, tikz, pgfplots ter naložiti samo tiste, ki jih potrebujete,</li>
+       <li>z \newcommand definirati nove ukaze,</li>
+       <li>z \newtheorem definirati nova okolja za definicije in trditve (vključno z ustrezno uporabo \theoremstyle).</li>
+    </ul>
+
+      V dokumentu morate znati vključiti:
+
+    <ul>
+       <li>naslov: \title, \author, \date, \maketitle,</li>
+       <li>dodatne datoteke: \input,</li>
+       <li>povzetek in kazalo: abstract, \tableofcontents,</li>
+       <li>razdelke: \section, \subsection, …</li>
+       <li>oblikovano besedilo: \emph, \textbf, \textit, \texttt, \verb, \url, \noindent, \centering, center, verbatim,</li>
+       <li>sezname (vključno z gnezdenimi): itemize, enumerate in \item,</li>
+       <li>tabele: table, tabular, \hline, \toprule, \midrule, \bottomrule, \multicolumn,</li>
+       <li>slike: figure, \includegraphics, tikzpicture (samo za že pripravljene slike),</li>
+       <li>sklice: label, ref, eqref, pageref,</li>
+       <li>citate: cite, nocite, bibliographystyle, bibliography.</li>
+    </ul>
+
+      Pri predstavitvah morate znati uporabiti:
+
+    <ul>
+       <li>temo z ukazom \usetheme (navodila bodo določila ime teme),</li>
+       <li>nove okvirje frame, \titlepage,</li>
+       <li>bloke: block, exampleblock in alertblock,</li>
+       <li>postopno odkrivanje: \pause, \onslide, \only ter določila <…> na ukazih, vključno z <+-> na seznamih,</li>
+       <li>stolpce columns z okolji column ali ukazi \column.</li>
+    </ul>
+
+    Pri matematiki morate ločiti med prikaznim (\[…\]) in vrstičnim načinom (\(…\) ali $…$) ter vedeti, kdaj uporabiti katerega. Brez dodatnih razlag morate poznati:
+
+    <ul>
+       <li>simbole: iz tabele <a href="">matematičnih simbolov</a>,</li>
+       <li>posebne prikaze: \frac, \sqrt, \binom, cases, matrike,</li>
+       <li>vgrajene funkcije: \sin, \cos, \log, \lim, … (predvsem, da ne napišete samo sin),</li>
+       <li>prikazna okolja: equation, align in multline (variante z * in brez),</li>
+       <li>pisave: \mathsf, \mathtt, mathrm, \mathbb, \mathcal,</li>
+       <li>vstavljanje besedila: \text.</li>
+    </ul>
+    
+   </p>
+
 </body>
 </html>
